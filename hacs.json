@@ -1,0 +1,5 @@
+{
+  "name": "No Longer Evil Thermostat",
+  "render_readme": true,
+  "homeassistant": "2023.1.0"
+}

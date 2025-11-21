@@ -1,0 +1,53 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "MQTT Broker Configuration",
+        "description": "Configure the MQTT broker connection for No Longer Evil Thermostat",
+        "data": {
+          "mqtt_broker": "MQTT Broker URL",
+          "mqtt_port": "MQTT Port",
+          "mqtt_username": "MQTT Username (optional)",
+          "mqtt_password": "MQTT Password (optional)",
+          "topic_prefix": "MQTT Topic Prefix"
+        }
+      },
+      "device": {
+        "title": "Add Thermostat Device",
+        "description": "Configure a Nest thermostat device. You have added {device_count} device(s) so far.",
+        "data": {
+          "name": "Device Name",
+          "serial": "Device Serial Number",
+          "temperature_unit": "Temperature Unit",
+          "add_another": "Add another device"
+        }
+      }
+    },
+    "error": {
+      "name_required": "Device name is required",
+      "serial_required": "Serial number is required",
+      "serial_invalid": "Serial number must contain only alphanumeric characters",
+      "serial_too_short": "Serial number must be at least 8 characters",
+      "cannot_connect": "Failed to connect to MQTT broker",
+      "unknown": "Unexpected error occurred"
+    },
+    "abort": {
+      "already_configured": "This device is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Update MQTT Configuration",
+        "description": "Update the MQTT broker connection settings",
+        "data": {
+          "mqtt_broker": "MQTT Broker URL",
+          "mqtt_port": "MQTT Port",
+          "mqtt_username": "MQTT Username",
+          "mqtt_password": "MQTT Password",
+          "topic_prefix": "MQTT Topic Prefix"
+        }
+      }
+    }
+  }
+}
